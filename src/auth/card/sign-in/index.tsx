@@ -1,5 +1,5 @@
-import AuthLogo from '../components/AuthLogo'
-import { currentYear, META_DATA } from '../config'
+import AuthLogo from '../../../components/AuthLogo'
+import { currentYear, META_DATA } from '../../../config'
 import { Link } from 'react-router-dom'
 import Form from './components/Form'
 
@@ -21,7 +21,7 @@ const Page = () => {
 
             <p className="mt-7 text-center text-sm text-slate-400">
               Novo aqui?&nbsp;
-              <Link to="/auth/sign-up" className="text-sky-400 font-semibold hover:text-sky-300">
+              <Link to="/auth/card/sign-up" className="text-sky-400 font-semibold hover:text-sky-300">
                 Criar uma conta
               </Link>
             </p>

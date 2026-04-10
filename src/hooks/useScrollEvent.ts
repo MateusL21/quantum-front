@@ -13,6 +13,7 @@ const useScrollEvent = () => {
   useEffect(() => {
     if (typeof window === 'undefined') return
     window.addEventListener('scroll', handleScroll, { passive: true })
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setScrollY(window.scrollY)
     setScrollHeight(document.body.offsetHeight)
     return () => {
